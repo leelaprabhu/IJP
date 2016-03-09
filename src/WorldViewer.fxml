@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="799.0" prefWidth="746.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Viewer">
+   <children>
+      <ImageView fx:id="imageView" fitHeight="799.0" fitWidth="746.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="buttonL" fitHeight="80.0" fitWidth="80.0" layoutX="15.0" layoutY="300.0" onMouseClicked="#clickL" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="buttonF" fitHeight="80.0" fitWidth="80.0" layoutX="333.0" layoutY="42.0" onMouseClicked="#clickF" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="buttonB" fitHeight="80.0" fitWidth="80.0" layoutX="64.0" layoutY="321.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="buttonR" fitHeight="80.0" fitWidth="80.0" layoutX="649.0" layoutY="300.0" onMouseClicked="#clickR" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="basketView" fitHeight="133.0" fitWidth="96.0" layoutX="169.0" layoutY="642.0" pickOnBounds="true" preserveRatio="true" />
+      <MenuBar layoutY="-2.0" prefHeight="34.0" prefWidth="746.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Pick Up">
+            <items>
+              <MenuItem id="basketMenuPick" fx:id="basketMenuPick" mnemonicParsing="false" onAction="#pickUp" text="Basket" />
+                  <MenuItem id="bulbMenuPick" fx:id="bulbMenuPick" mnemonicParsing="false" onAction="#pickUp" text="Bulb" />
+                  <MenuItem id="bunnyMenuPick" fx:id="bunnyMenuPick" mnemonicParsing="false" onAction="#pickUp" text="Bunny" />
+                  <MenuItem id="starMenuPick" fx:id="starMenuPick" mnemonicParsing="false" onAction="#pickUp" text="Star" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Put Down">
+              <items>
+                <MenuItem id="basketMenuPut" fx:id="basketMenuPut" disable="true" mnemonicParsing="false" onAction="#putDown" text="Basket" />
+                  <MenuItem id="bulbMenuPut" fx:id="bulbMenuPut" disable="true" mnemonicParsing="false" onAction="#putDown" text="Bulb" />
+                  <MenuItem id="bunnyMenuPut" fx:id="bunnyMenuPut" disable="true" mnemonicParsing="false" onAction="#putDown" text="Bunny" />
+                  <MenuItem id="starMenuPut" fx:id="starMenuPut" disable="true" mnemonicParsing="false" onAction="#putDown" text="Star" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <ImageView fx:id="bulbView" fitHeight="133.0" fitWidth="96.0" layoutX="28.0" layoutY="642.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="bunnyView" fitHeight="133.0" fitWidth="96.0" layoutX="601.0" layoutY="642.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="starView" fitHeight="133.0" fitWidth="96.0" layoutX="429.0" layoutY="642.0" pickOnBounds="true" preserveRatio="true" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="49.0" layoutX="525.0" layoutY="33.0" stroke="TRANSPARENT" strokeType="INSIDE" width="218.0" />
+      <Text fx:id="textBox" layoutX="543.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+      <ImageView fx:id="mapView" fitHeight="176.0" fitWidth="132.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true" />
+      <AmbientLight color="CHARTREUSE" layoutX="355.0" layoutY="349.0" lightOn="true" />
+      <TextArea fx:id="EnterText" layoutX="525.0" layoutY="122.0" onKeyPressed="#getText" prefHeight="94.0" prefWidth="200.0" promptText="Hi!!!" />
+   </children>
+</AnchorPane>
